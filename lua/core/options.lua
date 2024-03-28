@@ -3,7 +3,7 @@ local c = vim.cmd       -- Vim commands
 local w = vim.wo        -- Window options
 local b = vim.bo        -- Vim buffer options
 
-
+o.mouse = 'a'           -- enable mouse
 o.number = true         -- Show line numbers
 o.scrolloff = 8         -- Start scrolling before reaching the bottom or top
 o.termguicolors = true  -- Have more colors available
@@ -24,6 +24,8 @@ o.autoindent = true
 -- search settings
 o.ignorecase = true     -- Will find upper and lowercase examples
 o.smartcase = true
+o.incsearch = true      -- Smart searching e.g example*
+o.hlsearch = true       -- dont stay highlighted
 
 -- backspace
 o.backspace = "indent,eol,start"
@@ -47,4 +49,4 @@ Enabling this will make the tab key (in insert mode) insert spaces instead of ta
 smarttab
 Enabling this will make the tab key (in insert mode) insert spaces or tabs to go to the next indent of the next tabstop when the cursor is at the beginning of a line (i.e. the only preceding characters are whitespace).
 --]]
-
+--
