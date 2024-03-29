@@ -14,6 +14,18 @@ return {
 			-- see :help lsp-zero-keybindings
 			-- to learn the available actions
 			lsp_zero.default_keymaps({ buffer = bufnr })
+
+            local cmp = require('cmp')
+
+cmp.setup({
+                preselect = 'item',
+  completion = {
+    completeopt = 'menu,menuone,noinsert'
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({select = true}),
+  }),
+})
 		end)
 	end,
 }
