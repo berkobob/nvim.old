@@ -95,4 +95,5 @@ keymap("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if 
 
 keymap("n", "<leader>gf", vim.lsp.buf.format, {})
 
-
+-- LazyGit
+keymap("n", "<leader>lg", ":LazyGit <CR>", opts)
