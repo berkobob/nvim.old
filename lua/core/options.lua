@@ -5,6 +5,7 @@ local b = vim.bo        -- Vim buffer options
 
 o.mouse = 'a'           -- enable mouse
 o.number = true         -- Show line numbers
+o.relativenumber = true -- Show line numbers
 o.scrolloff = 8         -- Start scrolling before reaching the bottom or top
 o.termguicolors = true  -- Have more colors available
 o.splitbelow = true     -- New split windows appear below
@@ -19,7 +20,7 @@ c 'highlight ColorColumn ctermbg=0 guibg=lightgrey'
 o.tabstop = 4           -- Size of tabs
 o.shiftwidth = 4        -- Size of each indent
 o.expandtab = true      -- When using tab key, insert spaces
-o.autoindent = true 
+o.autoindent = true
 
 -- search settings
 o.ignorecase = true     -- Will find upper and lowercase examples
